@@ -46,31 +46,40 @@
   };
 </script>
 
-  <meta name="description" content="记录生活点滴，分享技术实战">
+  <meta name="description" content="（1）使用urllib.request.urlopen直接打开读取，BeautifulSoup解析      urllib.request.urlopen(url+’?’+data).read()  soup = BeautifulSoup(cnblogs, ‘html.parser’)（2）使用requests，BeautifulSoup">
 <meta name="keywords" content=".net pathon">
-<meta property="og:type" content="website">
-<meta property="og:title" content="I&#39;ll Be Back">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python爬取总结">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;21&#x2F;python%E7%88%AC%E5%8F%96%E6%80%BB%E7%BB%93&#x2F;index.html">
 <meta property="og:site_name" content="I&#39;ll Be Back">
-<meta property="og:description" content="记录生活点滴，分享技术实战">
+<meta property="og:description" content="（1）使用urllib.request.urlopen直接打开读取，BeautifulSoup解析      urllib.request.urlopen(url+’?’+data).read()  soup = BeautifulSoup(cnblogs, ‘html.parser’)（2）使用requests，BeautifulSoup">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;21&#x2F;python%E7%88%AC%E5%8F%96%E6%80%BB%E7%BB%93&#x2F;1574299441.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;21&#x2F;python%E7%88%AC%E5%8F%96%E6%80%BB%E7%BB%93&#x2F;1574304317.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;21&#x2F;python%E7%88%AC%E5%8F%96%E6%80%BB%E7%BB%93&#x2F;1574304417.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;21&#x2F;python%E7%88%AC%E5%8F%96%E6%80%BB%E7%BB%93&#x2F;1574304487.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;21&#x2F;python%E7%88%AC%E5%8F%96%E6%80%BB%E7%BB%93&#x2F;1574304492.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;21&#x2F;python%E7%88%AC%E5%8F%96%E6%80%BB%E7%BB%93&#x2F;1574304629.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;21&#x2F;python%E7%88%AC%E5%8F%96%E6%80%BB%E7%BB%93&#x2F;1574304649.jpg">
+<meta property="og:updated_time" content="2019-11-21T02:52:01.920Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;21&#x2F;python%E7%88%AC%E5%8F%96%E6%80%BB%E7%BB%93&#x2F;1574299441.jpg">
 
-<link rel="canonical" href="http://yoursite.com/">
+<link rel="canonical" href="http://yoursite.com/2019/11/21/python%E7%88%AC%E5%8F%96%E6%80%BB%E7%BB%93/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: true,
-    isPost: false,
+    isHome: false,
+    isPost: true,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>I'll Be Back</title>
+  <title>python爬取总结 | I'll Be Back</title>
   
 
 
@@ -195,10 +204,10 @@
             
 
   <div class="posts-expand">
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/21/python%E7%88%AC%E5%8F%96%E6%80%BB%E7%BB%93/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -212,8 +221,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/11/21/python%E7%88%AC%E5%8F%96%E6%80%BB%E7%BB%93/" class="post-title-link" itemprop="url">python爬取总结</a>
+          python爬取总结
         </h1>
 
         <div class="post-meta">
@@ -258,197 +266,55 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>（1）使用urllib.request.urlopen直接打开读取，BeautifulSoup解析    </p><p><img src="/2019/11/21/python%E7%88%AC%E5%8F%96%E6%80%BB%E7%BB%93/1574299441.jpg" alt="使用BeautifulSoup解析"></p><p>  urllib.request.urlopen(url+’?’+data).read()<br>  soup = BeautifulSoup(cnblogs, ‘html.parser’)</p><p>（2）使用requests，BeautifulSoup</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/11/21/python%E7%88%AC%E5%8F%96%E6%80%BB%E7%BB%93/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
+        <p>（1）使用urllib.request.urlopen直接打开读取，BeautifulSoup解析    </p><p><img src="/2019/11/21/python%E7%88%AC%E5%8F%96%E6%80%BB%E7%BB%93/1574299441.jpg" alt="使用BeautifulSoup解析"></p><p>  urllib.request.urlopen(url+’?’+data).read()<br>  soup = BeautifulSoup(cnblogs, ‘html.parser’)</p><p>（2）使用requests，BeautifulSoup</p><a id="more"></a>
+
+
+
+<p>  html = requests.get(src).content<br>  soup = bs(html, ‘lxml’)</p>
+<img src="/2019/11/21/python%E7%88%AC%E5%8F%96%E6%80%BB%E7%BB%93/1574304317.jpg" class title="This is an image">
+
+
+<p>（3）使用urllib.request，etree配合XML</p>
+<p><img src="/2019/11/21/python%E7%88%AC%E5%8F%96%E6%80%BB%E7%BB%93/1574304417.jpg" alt="使用urllib.request，etree配合XML"></p>
+<p>（4）使用selenium，etree配合XML</p>
+<p><img src="/2019/11/21/python%E7%88%AC%E5%8F%96%E6%80%BB%E7%BB%93/1574304487.jpg" alt="使用selenium，etree配合XML"></p>
+<img src="/2019/11/21/python%E7%88%AC%E5%8F%96%E6%80%BB%E7%BB%93/1574304492.jpg" class title="This is an image">
+
+
+<p>（5）使用selenium，requests 保存图片资源</p>
+<p><img src="/2019/11/21/python%E7%88%AC%E5%8F%96%E6%80%BB%E7%BB%93/1574304629.jpg" alt="使用selenium，requests "></p>
+<p><img src="/2019/11/21/python%E7%88%AC%E5%8F%96%E6%80%BB%E7%BB%93/1574304649.jpg" alt="使用selenium，requests "></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/2019/11/20/hello-world/" rel="next" title="Hello World">
+                  <i class="fa fa-chevron-left"></i> Hello World
+                </a>
             </div>
-          <!--/noindex-->
-        
-      
-    </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+            <span class="post-nav-divider"></span>
 
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/20/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="jakeson">
-      <meta itemprop="description" content="记录生活点滴，分享技术实战">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="I'll Be Back">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/11/20/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-11-20 10:54:14" itemprop="dateCreated datePublished" datetime="2019-11-20T10:54:14+08:00">2019-11-20</time>
-            </span>
-
-          
-            <span id="/2019/11/20/hello-world/" class="post-meta-item leancloud_visitors" data-flag-title="Hello World" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span><br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>357</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/11/20/hello-world/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
+            <div class="post-nav-prev post-nav-item">
             </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
+          </div>
       </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/18/first-blog/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="jakeson">
-      <meta itemprop="description" content="记录生活点滴，分享技术实战">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="I'll Be Back">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/11/18/first-blog/" class="post-title-link" itemprop="url">first-blog</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-11-18 17:02:25" itemprop="dateCreated datePublished" datetime="2019-11-18T17:02:25+08:00">2019-11-18</time>
-            </span>
-
-          
-            <span id="/2019/11/18/first-blog/" class="post-meta-item leancloud_visitors" data-flag-title="first-blog" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span><br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>0</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
   </article>
   
   
   
 
   </div>
-
-  
-
 
 
           </div>
